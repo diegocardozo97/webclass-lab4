@@ -16,27 +16,27 @@
             </div>
             <div class="operators">
                 <span class="leftContainer">
-                    <span class="resetButton">
+                    <span class="resetButton" onclick="onClickReset()">
                         RESET
                     </span>
-                    <span class="equalButton">
+                    <span class="equalButton" onclick="onClickEqual()">
                         =
                     </span>
                 </span>
                 <span class="rightContainer">
                     <span class="upperOperators">
-                        <span id="addButton">
+                        <span id="addButton" onclick="onClickOperation('+')">
                             +
                         </span>
-                        <span id="substractButton">
+                        <span id="substractButton" onclick="onClickOperation('-')">
                             -
                         </span>
                     </span>
                     <span class="lowerOperators">
-                        <span id="multiplicationButton">
+                        <span id="multiplicationButton" onclick="onClickOperation('*')">
                             *
                         </span>
-                        <span id="divisionButton">
+                        <span id="divisionButton" onclick="onClickOperation('/')">
                             /
                         </span>         
                     </span>
@@ -54,5 +54,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="js/calculator_logic.js"></script>
     </body>
 </html>
